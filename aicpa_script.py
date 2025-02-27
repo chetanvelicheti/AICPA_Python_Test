@@ -120,7 +120,7 @@ def run(playwright):
         return
 
     # Navigate to the cart page
-    new_page.goto('https://www.aicpa-cima.com/account/cart')
+    new_page.goto('https://www.aicpa-cima.com/account/cart', timeout=60000)
     new_page.wait_for_load_state('load')
     print('Navigated to cart page: https://www.aicpa-cima.com/account/cart')
 
